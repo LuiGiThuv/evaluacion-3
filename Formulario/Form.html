@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Login &amp; Register Templates</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+      
+
+    </head>
+
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                	
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>Registro de Personal </strong></h1>
+							<h4> Sus datos estarán seguros y a su dispocion en todo momento. </4>
+								<br>
+								<hr>
+                            <div class="description">
+                            	<p>Por favor ingresar datos validos &amp; verdaderos</p>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        
+                        <div class="col-sm-1 grid"></div>
+                        <div class="col-sm-1"></div>
+                        	
+                        <div class="col-sm-5">
+
+							<form action="target.html" method="post" onsubmit="return validar()"></form>
+                        		<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Ingreso</h3>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" action="" method="post" class="registration-form">
+				                    	
+										Nombre de Usuario:
+
+										<div class="form-group">
+												<label class="sr-only" for="form-first-name">form-first-name</label>
+												<input id="email" class="form-control" type="text" placeholder="Ingrese un Correo electronico">
+												<div id="err_nombre"></div>
+											
+										
+										</div>
+										Contraseña:
+				                        
+										<div class="form-group">
+											<label class="sr-only" for="form-Password">form-Password</label>
+											<input id="password" class="form-control" type="text" placeholder="Escriba una contraseña">
+											<div id="err_pass"></div>
+										</div>
+				                    
+								
+										Confirmación de contraseña:
+
+										<div class="form-group">
+				                    		<label class="sr-only" for="form-confirm-password">form-confirm.password</label>
+											<input  id="confirmacion-password" class="form-control" type="text" placeholder="Repita la contraseña">
+											<div id="err_pass"></div>
+				                        </div>
+			
+										<h4>Direccion Postal</h4> 
+										
+										Dirección:
+
+										<div class="form-group">
+											<label class="sr-only" for="form-direccion">form-direccion</label>
+											<input id="direccion" class="form-control" type="text" placeholder="(Ej: Avenida España,casa N°43,Población Libertad)">
+											<div id="err_direcc"></div>
+									    </div>
+
+									   Número de telefono
+
+										<div class="form-group">
+				                    		<label class="sr-only" for="form-telefono">form-telefono</label>
+				                        	<input id="numero" class="form-control" type="text" placeholder="(Ej: +56 9 14674985)">
+											<div id="err_numero"></div>
+				                        </div>
+										
+										Ingrese la URL de su pagina web:
+
+										<div class="form-group">
+				                    		<label class="sr-only" for="form-Password">form-Password</label>
+				                        	<input id="Url" type="text"  class="form-control" placeholder="(Ej:twitter.com)" >
+											<div id="err_url"></div>
+											
+				                        </div>
+
+
+										Por favor describa cuales son sus mayores aficiones:
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-aficiones">form-aficiones</label>
+				                        	<textarea name="form-aficiones" placeholder="Escribe una lista de tus aficiones" class="form-about-yourself form-control" id="lista-aficiones"></textarea>
+											<button onclick="agregarAficiones()">Agregar</button>
+                                            <ul id="lista-aficiones"></ul>
+
+				                        </div>
+									   Comuna:
+
+									   <div class="form-group">
+														   <select id="comuna" class="form-select">
+															   <option selected>Seleccione una comuna...</option>
+															   <option>Ancud</option>
+															   <option>Valdivia</option>
+															   <option>Concepción</option>
+															   <option>Cohayque</option>
+															 </select>
+															 <div id="err_comuna"></div>
+													   </div>
+				                        <button type="submit" class="btn">Registrese ahora </button>
+										</div>
+
+				                    </form>
+			                    </div>
+								<br>
+                        	</div>
+						
+                        	<div class="social-login">
+								
+	                        	<h3>...or login with:</h3>
+	                        	<div class="social-login-buttons">
+		                        	<a class="btn btn-link-1 btn-link-1-facebook" href="#">
+		                        		<i class="fa fa-facebook"></i> Facebook
+		                        	</a>
+		                        	<a class="btn btn-link-1 btn-link-1-twitter" href="#">
+		                        		<i class="fa fa-twitter"></i> Twitter
+		                        	</a>
+		                        	<a class="btn btn-link-1 btn-link-1-google-plus" href="#">
+		                        		<i class="fa fa-google-plus"></i> Google Plus
+										<br>
+										
+		                        	</a>
+	                        	</div>
+	                        </div>
+	                        
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+	
+
+        <!-- Footer -->
+        <footer>
+			
+        	<div class="container">
+        		<div class="row">
+        			
+        			<div class="col-sm-8 col-sm-offset-2">
+        				
+						<hr>
+        				<p>Sitio no oficial de registros de <i class="fa fa-love"></i><a href="https://www.microsoft.com/es-cl">Microsoft </a>Islas Caiman</p>
+        			</div>
+        			
+        		</div>
+        	</div>
+        </footer>
+	
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    	<script src="js/script.js"></script>
+       
+    </body>
+
+</html>
